@@ -1,0 +1,182 @@
+.container{
+	.aboutUs{
+		img{
+			width: 36%;
+			margin-left: 4%;
+			float: left;
+		}
+		.aboutDesc{
+			width: 56%;
+			margin-right: 4%;
+			padding: 0 25px;
+			float: left;
+			font-size: 16px;
+			h2{
+				color: $links;
+				font-size: 60px;
+				text-align: center;
+			}
+			.button{
+				display: block;
+				margin: 0 auto;
+				width: 250px;
+				text-align: center;
+				font-size: 20px;
+			}
+		}
+
+	}
+}
+
+.aboutNav{
+	clear: both;
+}
+
+.aboutNav{
+	.box{
+		@include column(3);
+		background: $links;
+		margin-top: 20px;
+		color: $notwhite;
+		text-align: center;
+		padding: 30px 0;
+		font-family: $headings;
+		font-weight: 300;
+		font-size: 40px;
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+	.box2, .box4{
+		background: #A1A1A1;
+	}
+}
+
+#team{
+	h2{
+		color: $links;
+		font-size: 50px;
+		text-align: center;
+		margin-top: 50px;
+
+	}
+	.teamMember{
+		img{
+			float: left;
+			width: 30%;
+			border-radius: 50%;
+			margin: 2.5%;
+
+		}
+		.teamInfo{
+			float: left;
+			width: 60%;
+			margin-top: 30px;
+			padding-left: 25px;
+			h3{
+				font-family: $headings;
+				color: $links;
+				font-size: 30px;
+				font-weight: 300;
+				text-transform: none;
+				letter-spacing: 1px;
+			}
+			h4{
+				text-transform: none;
+				letter-spacing: 0;
+				font-weight: 600;
+				font-size: 16px;
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+
+	}
+}
+
+#facility{
+	h2{
+	  color: $links;
+	  font-size: 50px;
+	  text-align: center;
+	  margin-top: 50px;
+	}
+	img{
+		width: 100%;
+	}
+	p{
+		padding: 50px;
+		font-size: 18px;
+	}
+}
+
+#faq{
+	h2{
+	  color: $links;
+	  font-size: 50px;
+	  text-align: center;
+	  margin-top: 50px;
+	  margin-bottom: 50px;
+	}
+	.faq{
+		padding: 0 50px;
+		h3{
+			text-transform: none;
+			font-family: $headings;
+			color: $links;
+			letter-spacing: 1px;
+			font-weight: 300;
+			font-size: 30px;
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+}
+
+#rates{
+	padding-bottom: 50px;
+	.button{
+		display: inline-block;
+		margin-right: 25px;
+		margin-top: 50px;
+		margin-left: 30px;
+	}
+	h2{
+		color: $links;
+		font-size: 50px;
+		text-align: center;
+	}
+	p{
+		padding: 0px 50px;
+		font-size: 18px;
+		text-align: center;
+		span{
+			color: $links;
+			font-weight: 600;
+		}
+	}
+	img{
+		@include column(6);
+	}
+	.rates{
+		@include column(6);
+;		text-align: left;
+		padding-left: 25px;
+		h3{
+			text-transform: none;
+			color: $links;
+			letter-spacing: 1px;
+			font-family: $headings;
+			font-size: 25px;
+			font-weight: 300;
+			margin: 20px 0;
+		}
+		p{
+			text-align: left;
+			margin: 0;
+			padding-left: 0;
+		}
+	}
+}

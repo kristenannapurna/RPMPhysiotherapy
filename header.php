@@ -9,8 +9,11 @@
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
+  <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/flexslider.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <?php wp_head(); ?>
+
 </head>
 
 
@@ -18,16 +21,16 @@
 
 <header>
   <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
-
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'primary'
-    )); ?>
+    <nav class="clearfix">
+      <?php wp_nav_menu( array(
+         'theme_location' => 'primary',
+      )); ?>
+    </nav>    
   </div> <!-- /.container -->
 </header><!--/.header-->
+  <div class="container">
+    <h1 class="logo"><img src="<?php bloginfo('template_directory');?>/assets/images/rpmlogo.png" alt="RPM Physiotherapy"></h1>
+    
+  </div>
+
 

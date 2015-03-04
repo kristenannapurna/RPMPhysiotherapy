@@ -1,0 +1,217 @@
+.home{
+	a:hover{
+		opacity: 0.8;
+		}
+
+	}
+	section.hero{
+		padding-top: 25px;
+		.right{
+			width: 35%;
+			float: left;
+			.about, .services{
+				position: relative;
+			}
+			.services{
+				margin-top: -7px;
+			}
+			h3{
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				bottom: 5px;
+				background: rgba(68, 155, 148, 0.53);
+				width: 100%;
+				text-align: right;
+				font-family: $headings;
+				font-weight: 300;
+				color: #ECECEA;
+				padding: 5px;
+
+			}
+		}
+		.left{
+			width: 65%;
+			position: relative;
+			float: left;
+			h2{
+				position: absolute;
+				color: #ECECEA;
+				font-size: 40px;
+				z-index: 10;
+				bottom: 50px;
+				text-align: right;
+				width: 100%;
+				right: 10px;
+			}
+		}
+	}
+
+
+section.mailchimp{
+	width: 100%;
+	background: $rpm;
+	text-align: center;
+	color: #fff;
+	.mc4wp-form label{
+		display: inline !important;
+		float: left;
+		padding-left: 125px;
+		margin-right: 20px;	
+		font-size: 18px;
+	}
+	.mc4wp-form input[type=email]{
+		width: 40%;
+		float: left;
+	}
+}
+
+
+.mc4wp-form form{
+	padding: 30px;
+}
+
+.mc4wp-form input[type=submit]{
+	background: $links;
+	width: 12%;
+	margin-right: 125px;
+	padding: 3px;
+}
+
+
+
+
+section.features{
+	.feature{
+		@include column(4);
+		margin-top: 5px;
+		margin-bottom: 25px;
+		color: #ECECEA;
+		text-align: center;
+		p{
+			margin-top: 50px;
+			margin-bottom: 0;
+			font-size: 16px;
+		}
+		h2{
+			margin-bottom: 50px;
+			display: inline-block;
+			border-bottom: 2px solid #ECECEA;
+			font-size: 40px;
+		}
+	}
+	.featureOne{
+		background: #B2B69B;
+	}
+	.featureTwo{
+		background: $links;
+	}
+	.featureThree{
+		background: #BED8CA;
+	}
+}
+
+
+section.more{
+	.shop{
+		width: 48%;
+		float: left;
+		position: relative;
+		margin-left: 10px;
+		h2{
+			position: absolute;
+			font-size: 30px;
+			text-align: right;
+			padding: 10px 30px;
+			bottom: 5px;
+			right: 0;
+			color: #ECECEA;
+			background: rgba(68, 155, 148, 0.74);
+			width: 100%;
+
+		}
+	}
+	.flexslider{
+			text-align: center;
+		h2{
+			font-size: 30px;
+			display: inline-block;
+			margin-bottom: 30px;
+			border-bottom: 2px solid $links;
+			color: $links;
+
+		}
+		.flex-next, .flex-prev{
+			display: none;
+		}
+		float: left;
+		width: 50%;
+		img{
+			width: 25%;
+			border-radius: 50%;
+			float: left;
+			margin: 10px;
+			box-shadow: 3px 5px 0 $links; 
+		}
+		p{
+			float: left;
+			width: 70%;
+			padding-left: 20px;
+			margin-top: 10px;
+			text-align: left;
+
+		}
+
+	}
+}
+
+section.latestPosts{
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	ul{
+		padding-top: 50px;
+	}
+	li{
+		@include column(4);
+		list-style-type: none;
+		h3{
+			font-family: $headings;
+			font-weight: 300;
+			font-size: 30px;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	h2{
+		display: inline;
+		position: relative;
+		padding: 0 20px;
+		text-align: center;
+		font-size: 35px;
+		&:before,
+		&:after{
+			content:"";
+			position: absolute;
+			top: 50%;
+			width: 90%;
+			height: 0;
+			border-bottom: solid 2px #333;
+		}
+		&:before{
+			right: 100%;
+		}
+		&:after{
+			left: 100%;
+		}
+	}
+}
+
+
+.latestPosts p a{
+	color: #333;
+	&:hover{
+		color: $links;
+	}
+}

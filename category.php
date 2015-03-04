@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
+  <div class="container clearfix">
     <div class="content">
 
       <h1>Category Archives: <?php single_cat_title(); ?></h1>

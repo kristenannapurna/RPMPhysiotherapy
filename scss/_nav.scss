@@ -1,0 +1,70 @@
+nav{
+	background: #1c7dc0;
+	background: -moz-linear-gradient(-45deg,  #1c7dc0 75%, #5b9792 75%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(75%,#1c7dc0), color-stop(75%,#5b9792));
+	background: -webkit-linear-gradient(-45deg,  #1c7dc0 75%,#5b9792 75%);
+	background: -o-linear-gradient(-45deg,  #1c7dc0 75%,#5b9792 75%);
+	background: -ms-linear-gradient(-45deg,  #1c7dc0 75%,#5b9792 75%);
+	background: linear-gradient(135deg,  #1c7dc0 75%,#5b9792 75%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c7dc0', endColorstr='#5b9792',GradientType=1 );
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	ul{
+		padding: 10px;
+		li{
+			list-style-type: none;
+			display: inline;
+			text-shadow: 0 0 1px #333;
+			text-transform: uppercase;
+			position: relative;
+			transition: all 0.5s;
+			&:last-child{
+				color: #ECECEA;
+				float: right;
+				font-size: 20px;
+				a{
+					font-size: 20px;
+					font-family: $main;
+				}
+			}
+			a{
+				color: #ECECEA;
+				padding: 10px 11px;
+				font-size: 16px;
+				&:hover{
+					color: $hover;
+				}
+
+			}
+
+		}
+
+	}
+	
+}
+
+ul.sub-menu{
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	transition: all 0.5s;
+		li{
+		background: $rpm;
+		display: block;
+		width: 200px;
+		&:nth-child(odd){
+			background: $hover;
+		}
+	}
+}
+
+
+.sub-menu li:last-child a{
+	font-size: 16px;
+}
+
+ul.menu li:hover > ul.sub-menu{
+	display: block;
+	opacity: 1;
+}

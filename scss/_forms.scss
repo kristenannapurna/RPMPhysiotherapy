@@ -1,0 +1,68 @@
+/* See _mixins.scss for more on this method for handling HTML5 elements */
+#{$all-text-inputs}, 
+textarea {
+	font-size: 20px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-transform: none;
+	color: #449b94;
+	margin-bottom: 20px;
+	transition: all 0.5s ease-in-out;
+	border: 3px solid transparent;
+	background: #ececea;
+}
+#{$all-text-inputs-focus},
+textarea:focus {
+	color: $text;
+	border: 3px solid $links;
+}
+input[type=submit] {
+	-webkit-appearance: none;
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	color: #ececea;
+	background: #0076c8;
+	box-shadow: 0 5px 0 #b5dbcb;
+	border: 3px solid transparent;
+	transition: ease-in 0.5s;
+	&:hover{
+		border: 3px solid #b5dbcb;
+		box-shadow: none;
+		background: #449b94;
+		cursor: pointer;
+	}
+}
+
+/* Placeholders */
+::placeholder {
+	color: TEXTCOLOR;
+}
+
+/* Search form */
+input#s {
+}
+input#searchsubmit {
+}
+
+/*Button*/
+
+.button{
+	display: inline-block;
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #ececea;
+	font-size: 30px;
+	background: #0076c8;
+	box-shadow: 0 5px 0 #b5dbcb;
+	border: 5px solid transparent;
+	transition: all 0.5s;
+	padding: 0 5px;
+	&:hover{
+		border: 5px solid #b5dbcb;
+		box-shadow: none;
+		background: #5B9792;
+		cursor: pointer;
+	}
+}

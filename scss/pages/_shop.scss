@@ -1,0 +1,8 @@
+.product{
+	@include column(4);
+	h4{
+		text-transform: none;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+}

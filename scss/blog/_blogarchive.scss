@@ -1,0 +1,39 @@
+.blogArchive{
+	width: 70%;
+	float: left;
+	padding: 20px;
+	h2{
+		color: $links;
+		font-size: 50px;
+		border-bottom: 5px solid $links;
+		line-height: 65px;
+		margin-bottom: 30px;
+	}
+	article{
+		h1{
+			font-family: $main;
+		}
+		p{
+			line-height: 1.5;
+			font-size: 16px;
+		}
+		img{
+			max-width: 100%;
+		}
+		.entry-header{
+			h1{
+				color: #333;
+				font-size: 20px;
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+
+.sidebar{
+	width: 30%;
+	float: left;
+	padding: 20px;
+}

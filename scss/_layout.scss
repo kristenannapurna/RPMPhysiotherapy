@@ -1,0 +1,39 @@
+body {
+	background: $bg;
+	margin: 0;
+	padding: 0;
+	min-width: $width-outer;
+	img{
+		max-width: 100%;
+	}
+}
+.container {
+	max-width: $width;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.sidebarTemplate{
+	width: 70%;
+	float: left;
+	padding: 50px 25px;
+	h2{
+		font-size: 40px;
+		color: $links;
+	}
+	h3{
+		font-size: 30px;
+	}
+	p{
+		font-size: 16px;
+	}
+	img{
+		max-width: 100%;
+	}
+}
+
+
+
+
+/* Sticky footer */
+@include sticky-footer(50px, '#page','#main','#colophon');
