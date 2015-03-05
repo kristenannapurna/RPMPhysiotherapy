@@ -29,6 +29,10 @@
 		display: none;
 	}
 
+	.mobileBanner{
+		display: block;
+	}
+
 	h1.logo{
 		width: 70%;
 	}
@@ -208,5 +212,17 @@
 	.product{
 		margin-bottom: 50px;
 	}
+/*mobile nav*/
+
+	.mobileNav ul li a{
+		font-size: 28px;
+		margin-bottom: 10px;
+	}
+
+
 
 }
+
+
+
+

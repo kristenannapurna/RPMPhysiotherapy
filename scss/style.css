@@ -347,6 +347,62 @@ h1.logo {
   padding-top: 75px;
 }
 
+.mobileNav {
+  display: none;
+  background: rgba(68, 155, 148, 0.85);
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 50px;
+}
+.mobileNav .navClose {
+  fill: #ECECEA;
+}
+.mobileNav ul {
+  padding: 50px;
+}
+.mobileNav ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.mobileNav ul li:last-child {
+  display: none;
+}
+.mobileNav ul li a {
+  color: #ECECEA;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  padding: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 0 1px #333;
+}
+.mobileNav ul li a:hover, .mobileNav ul li a:active {
+  color: #b5dbcb;
+}
+
+.mobileBanner {
+  display: none;
+  background: #1C7DC0;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #ECECEA;
+}
+.mobileBanner a {
+  color: #ECECEA;
+  padding-left: 10px;
+}
+.mobileBanner .fa-bars {
+  float: right;
+  font-size: 30px;
+}
+.mobileBanner .fa-bars:hover {
+  cursor: pointer;
+}
+
 nav {
   background: #1c7dc0;
   background: -moz-linear-gradient(-45deg, #1c7dc0 75%, #5b9792 75%);
@@ -1576,6 +1632,10 @@ section.latestPosts h2:after {
     display: none;
   }
 
+  .mobileBanner {
+    display: block;
+  }
+
   h1.logo {
     width: 70%;
   }
@@ -1755,5 +1815,11 @@ section.latestPosts h2:after {
 
   .product {
     margin-bottom: 50px;
+  }
+
+  /*mobile nav*/
+  .mobileNav ul li a {
+    font-size: 28px;
+    margin-bottom: 10px;
   }
 }

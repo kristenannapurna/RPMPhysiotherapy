@@ -20,13 +20,31 @@
 
 <body <?php body_class(); ?>>
 
+    <div class="mobileNav">
+        <div class="navClose">
+          <svg x="0px" y="0px" width="70px" height="70px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                          <polygon points="24.899,7.929 22.071,5.101 15,12.172 7.929,5.101 5.101,7.929 12.172,15 5.101,22.071 7.929,24.899 15,17.828
+                            22.071,24.899 24.899,22.071 17.828,15 "></polygon>
+                          </svg>
+        </div>
+        <?php wp_nav_menu( array(
+           'theme_location' => 'primary',
+        )); ?> 
+    </div> 
+    <div class="mobileBanner">
+    <i class="fa fa-phone"></i><a title="416-572-0479" href="tel:+1-416-572-0479">416-572-0479</a>
+    <i class="fa fa-bars"></i>
+    </div>
+
+
 <header>
   <div class="container">
     <nav class="clearfix">
       <?php wp_nav_menu( array(
          'theme_location' => 'primary',
       )); ?>
-    </nav>    
+    </nav>   
+
   </div> <!-- /.container -->
 </header><!--/.header-->
   <div class="container">

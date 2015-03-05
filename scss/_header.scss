@@ -11,3 +11,65 @@ h1.logo{
 	margin: 0 auto;
 	padding-top: 75px;
 }
+
+.mobileNav{
+	display: none;
+	background: rgba(68, 155, 148, 0.85);
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-bottom: 200px;
+	padding-top: 50px;
+	.navClose{
+		fill: $notwhite;
+
+	}
+	ul{
+		padding: 50px;
+		li{
+			list-style-type: none;
+			margin-bottom: 10px;
+			&:last-child{
+					display: none;
+				}
+			a{
+				color: $notwhite;
+				text-transform: uppercase;
+				font-family: $headings;
+				font-size: 40px;
+				padding: 20px;
+				letter-spacing: 5px;
+				text-shadow: 0 0 1px #333;
+				&:hover, &:active{
+					color: $hover;
+				}
+
+			}
+
+		}
+	}
+}
+
+
+.mobileBanner{
+	display: none;
+	background: $rpm;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: $notwhite;
+	a{
+		color: $notwhite;
+		padding-left: 10px;
+	}
+	.fa-bars{
+		float: right;
+		font-size: 30px;
+		&:hover{
+			cursor: pointer;
+		}
+
+	}
+}
+
