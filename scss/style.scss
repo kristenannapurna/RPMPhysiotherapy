@@ -1,5 +1,5 @@
 /*!
-Theme Name: kristenSpencer starter theme
+Theme Name: RPM Physiotherapy
 Theme URI: http://kristenspencer.ca
 Author: kristenSpencer
 AuthorURI: http://kristenspencer.ca
@@ -61,3 +61,7 @@ Text Domain: kristenSpencer
 /* =BLOG SPECIFIC
 ------------------ */
 @import "blog/all";
+
+/* =MEDIA QUERIES
+-----------------*/
+@import "media";

@@ -1,5 +1,5 @@
 /*!
-Theme Name: kristenSpencer starter theme
+Theme Name: RPM Physiotherapy
 Theme URI: http://kristenspencer.ca
 Author: kristenSpencer
 AuthorURI: http://kristenspencer.ca
@@ -906,15 +906,19 @@ section.mailchimp {
   color: #fff;
 }
 section.mailchimp .mc4wp-form label {
-  display: inline !important;
-  float: left;
-  padding-left: 125px;
-  margin-right: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px 0;
   font-size: 18px;
+  font-weight: 300;
 }
 section.mailchimp .mc4wp-form input[type=email] {
-  width: 40%;
-  float: left;
+  width: 50%;
+  padding: 3px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .mc4wp-form form {
@@ -923,9 +927,9 @@ section.mailchimp .mc4wp-form input[type=email] {
 
 .mc4wp-form input[type=submit] {
   background: #449b94;
-  width: 12%;
-  margin-right: 125px;
-  padding: 3px;
+  width: 50%;
+  margin: 10px auto;
+  padding: 5px;
 }
 
 section.features .feature {
@@ -1300,7 +1304,7 @@ section.latestPosts h2:after {
   background: #449b94;
   text-transform: uppercase;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   text-shadow: 0 0 1px #333;
   padding: 30px 10px;
@@ -1542,4 +1546,214 @@ section.latestPosts h2:after {
 }
 .pagination .nav-next {
   float: right;
+}
+
+/* =MEDIA QUERIES
+-----------------*/
+/*Small desktops and portrait tablet*/
+@media (max-width: 1115px) {
+  nav ul li a {
+    font-size: 10px;
+    padding-top: 4px;
+  }
+
+  nav ul li:last-child, nav ul li:last-child a {
+    font-size: 16px;
+  }
+}
+/*landscape phones*/
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .leftServices, .sidebarTemplate, .blogArchive, .content {
+    width: 100%;
+    float: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  h1.logo {
+    width: 70%;
+  }
+
+  .aboutNav .box {
+    font-size: 20px;
+  }
+
+  .container .aboutUs img {
+    display: none;
+  }
+
+  .container .aboutUs .aboutDesc {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #rates img {
+    display: none;
+  }
+
+  #rates .rates {
+    float: none;
+  }
+
+  #rates .rates h3, #rates .rates p {
+    padding-left: 80px;
+  }
+
+  #rates .button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  section.hero .left h2 {
+    font-size: 25px;
+    bottom: 10px;
+  }
+
+  section.hero .right h3 {
+    font-size: 23px;
+  }
+
+  section.features .feature h2 {
+    font-size: 25px;
+  }
+
+  section.more .shop {
+    float: none;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  section.more .flexslider {
+    float: none;
+    width: 98%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  section.latestPosts {
+    padding: 40px 0;
+  }
+
+  section.latestPosts h2:after, section.latestPosts h2:before {
+    width: 30%;
+  }
+
+  section.latestPosts li {
+    display: inline;
+    float: left;
+    width: 97.91667%;
+    margin: 0 1.04167%;
+  }
+
+  footer .container .footer {
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+
+  footer .container .copy {
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .contactFooter a {
+    width: 50%;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  section.more .flexslider {
+    display: none;
+  }
+
+  section.hero .left {
+    float: none;
+    width: 100%;
+  }
+
+  section.hero .right {
+    float: none;
+    width: 100%;
+  }
+
+  section.hero .right .about, section.hero .right .services {
+    top: -8px;
+  }
+
+  body img {
+    width: 100%;
+  }
+
+  section.features .feature {
+    display: none;
+  }
+
+  section.more .shop {
+    display: none;
+  }
+
+  footer .container .footer h2 {
+    font-size: 20px;
+    float: left;
+    padding-left: 50px;
+  }
+
+  footer .container .footer i {
+    font-size: 20px;
+  }
+
+  footer a.button {
+    font-size: 20px;
+  }
+
+  footer .container .footer p {
+    display: none;
+  }
+
+  .subscribeFooter {
+    display: none;
+  }
+
+  footer .icons {
+    top: -10px;
+  }
+
+  #team .teamMember .teamInfo p {
+    display: none;
+  }
+
+  #rates .button {
+    width: 70%;
+    text-align: center;
+  }
+
+  /*services page*/
+  .service {
+    font-size: 12px;
+    min-height: 120px;
+  }
+
+  .product {
+    margin-bottom: 50px;
+  }
 }
