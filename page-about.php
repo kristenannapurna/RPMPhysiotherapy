@@ -20,10 +20,10 @@
 					</div>
 				</div>
 				<div class="aboutNav clearfix">
-					<a href="#team" class="box box1">Our Team</a>
-					<a href="#facility" class="box box2">Our Facility</a>
-					<a href="#faq" class="box box3">FAQs</a>
-					<a href="#rates" class="box box4">Rates</a>
+					<a data-scroll href="#team" class="box box1">Our Team</a>
+					<a  data-scroll href="#facility" class="box box2">Our Facility</a>
+					<a data-scroll href="#faq" class="box box3">FAQs</a>
+					<a data-scroll href="#rates" class="box box4">Rates</a>
 				</div>
 				<div id="team">
 					<h2>Our Team</h2>

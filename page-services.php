@@ -13,7 +13,7 @@
 					<h1>Services</h1>
 						<div class="serviceButtons clearfix">
 							<?php while( has_sub_field('services') ): ?>
-								<a href="#<?php the_sub_field('anchor')  ?>" class="service"><?php the_sub_field('service_name') ?></a>
+								<a data-scroll href="#<?php the_sub_field('anchor')  ?>" class="service"><?php the_sub_field('service_name') ?></a>
 						<?php endwhile; ?>
 					</div>
 				</div>

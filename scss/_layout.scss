@@ -1,8 +1,13 @@
+html{
+	height: 100%;
+}
+
 body {
 	background: $bg;
 	margin: 0;
 	padding: 0;
 	min-width: $width-outer;
+	height: 100%;
 	img{
 		max-width: 100%;
 	}

@@ -277,11 +277,16 @@ body:after {
 
 /* =LAYOUTS
 ------------------ */
+html {
+  height: 100%;
+}
+
 body {
   background: #ECECEA;
   margin: 0;
   padding: 0;
   min-width: 80%;
+  height: 100%;
 }
 body img {
   max-width: 100%;
@@ -354,6 +359,10 @@ h1.logo {
   z-index: 9999;
   width: 100%;
   height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   padding-bottom: 200px;
   padding-top: 50px;
@@ -530,6 +539,19 @@ article footer p {
 
 .subscribeFooter p {
   margin-bottom: 0 !important;
+}
+
+#goToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 200px;
+  opacity: 0;
+  transition: opacity 500;
+  text-align: center;
+  font-size: 16px;
+  padding: 0 20px 20px 20px;
+  background: rgba(0, 118, 200, 0.7);
+  color: #ECECEA;
 }
 
 /* =CONTENT
@@ -1819,7 +1841,10 @@ section.latestPosts h2:after {
 
   /*mobile nav*/
   .mobileNav ul li a {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  #goToTop {
+    display: none;
   }
 }
